@@ -1,5 +1,4 @@
 <?php
-
 $servername = "mysql-ahophp.alwaysdata.net";
 $username = "ahophp";
 $password = "Holamundo2023";
@@ -13,6 +12,6 @@ if($conn -> connect_error){
 
 echo "Conexión exitosa a la base de datos MySQL";
 
-$conn -> close();
+//$conn -> close();
 
 ?>
