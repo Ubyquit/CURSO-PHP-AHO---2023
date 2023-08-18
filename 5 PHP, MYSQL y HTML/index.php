@@ -7,7 +7,8 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    </head>
 
 <body style="background-color: aliceblue;">
     <main>
@@ -51,8 +52,8 @@
                                         <th scope="col">Apellidos</th>
                                         <th scope="col">Email</th>
                                         <th scope="col">Fecha de nacimiento</th>
-                                        <th scope="col">Actualizar</th>
-                                        <th scope="col">Eliminar</th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
                                     </tr>
 
                                 </thead>
@@ -73,8 +74,8 @@
                                         echo "<td>{$usuario[ 'apellido' ]}</td>";
                                         echo "<td>{$usuario[ 'email' ]}</td>";
                                         echo "<td>{$usuario[ 'fecha_nacimiento' ]}</td>";
-                                        echo "<td><a class='btn btn-warning' href='./update.php'>Editar</a></td>";
-                                        echo "<td><a class='btn btn-danger' href='./delete.php?id={$usuario[ 'id_usuarios' ]}'>Eliminar</a></td>";
+                                        echo "<td><a class='btn' href='./update.php'><i class='bi bi-pencil-square' style='font-size: 1.3rem; color: #ffbb00;'></i></a></td>";
+                                        echo "<td><a class='btn' href='./delete.php?id={$usuario[ 'id_usuarios' ]}'><i class='bi bi-trash2' style='font-size: 1.3rem; color: #ff0000;'></i></a></td>";
                                         echo "</tr>";
                                     } ?>
                                 </tbody>
