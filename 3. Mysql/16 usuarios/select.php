@@ -9,7 +9,7 @@ $stmt = $conn->prepare($sql);
 
 $stmt->bind_param("i", $id_usuarios);
 
-$id_usuarios = 10;
+$id_usuarios = 18;
 
 $stmt->execute();
 

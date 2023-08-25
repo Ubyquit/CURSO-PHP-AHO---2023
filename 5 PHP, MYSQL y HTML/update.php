@@ -1,5 +1,7 @@
 <?php
 
+print_r($_POST);
+
 require('conexion.php');
 
 // Variable de la consulta
@@ -11,12 +13,14 @@ $stmt = $conn->prepare($sql);
 
 $stmt->bind_param("ssssi", $nombre, $apellido, $email, $fecha_nacimiento, $id_usuarios);
 
-$nombre = "Fulano";
-$apellido = "Merengue";
-$email = "fulanito@gmail.com";
-$fecha_nacimiento = "1995-01-01";
-$id_usuarios = 8;
+$nombre = $_POST[ 'nombre' ];
+$apellido = $_POST[ 'apellido' ];
+$email = $_POST[ 'email' ];
+$fecha_nacimiento = $_POST[ 'fecha_nacimiento' ];
+$id_usuarios = $_POST[ 'id' ];
 
 $stmt->execute();
 
+
+header("Location: ./index.php");
 ?>

@@ -14,8 +14,7 @@ while ($usuario = array_shift($usuarios)) {
     echo "<td>{$usuario[ 'apellido' ]}</td>";
     echo "<td>{$usuario[ 'email' ]}</td>";
     echo "<td>{$usuario[ 'fecha_nacimiento' ]}</td>";
-    echo "<td><a class='btn btn-warning' href='#'>Editar</a></td>";
-    echo "<td><a class='btn btn-danger' href='./delete.php?id={$usuario[ 'id_usuarios' ]}'>Eliminar</a></td>";
+    echo "<td><a class='btn' href='./form-update.php?id={$usuario[ 'id_usuarios' ]}'><i class='bi bi-pencil-square' style='font-size: 1.3rem; color: #ffbb00;'></i></a></td>";
+    echo "<td><a class='btn' href='./delete.php?id={$usuario[ 'id_usuarios' ]}'><i class='bi bi-trash2-fill' style='font-size: 1.3rem; color: #ff0000;'></i></a></td>";
     echo "</tr>";
-}
-?>
+} ?>

@@ -15,7 +15,7 @@ $nombre = "Fulano";
 $apellido = "Merengue";
 $email = "fulanito@gmail.com";
 $fecha_nacimiento = "1995-01-01";
-$id_usuarios = 8;
+$id_usuarios = 18;
 
 $stmt->execute();
 
