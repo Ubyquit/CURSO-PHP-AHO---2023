@@ -36,6 +36,8 @@
                                 </div>
                                 <button type="submit" class="btn btn-primary">Iniciar sesión</button>
                             </form>
+                            <hr>
+                            <a href="./registro.php">Regístrate</a>
                             <!-- ========== End formulario ========== -->
                         </div>
                     </div>

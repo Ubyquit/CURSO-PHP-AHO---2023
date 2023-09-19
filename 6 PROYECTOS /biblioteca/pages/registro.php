@@ -22,7 +22,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="card">
-                        <div class="card-header">Registrarte</div>
+                        <div class="card-header">Regístrarte</div>
                         <div class="card-body">
                             <!-- ========== Start formulario ========== -->
                             <form action="../actions/registro_action.php" method="post">
@@ -48,6 +48,8 @@
                                 </div>
                                 <button type="submit" class="btn btn-primary">Crear usuario</button>
                             </form>
+                            <hr>
+                            <a href="./login.php">Iniciar sesión</a>
                             <!-- ========== End formulario ========== -->
                         </div>
                     </div>

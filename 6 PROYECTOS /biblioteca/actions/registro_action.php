@@ -22,7 +22,11 @@ if ($_SERVER[ 'REQUEST_METHOD' ] == 'POST') {
     if ($stmt->execute()) {
         header('Location: ../pages/login.php');
     } else {
-        echo "Error al registrar el usuario: " . $stmt->error;
+
+        //echo "Error al registrar el usuario: " . $stmt->error;
+        echo "<h1>Error al registrar el usuario: Correo electrónico ya registrado</h1>";
+
+        header('refresh:5;url=../pages/registro.php');
     }
 
     $stmt->close();
