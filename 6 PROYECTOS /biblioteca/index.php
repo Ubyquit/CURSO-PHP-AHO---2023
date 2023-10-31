@@ -41,13 +41,11 @@
                     <p class='card-text'>{$libro[ 'autor' ]}</p>
                     <p class='card-text'>{$libro[ 'editorial' ]}</p>
                     <P class='card-text'>{$libro[ 'fecha_lanzamiento' ]}</P>
-                    <a href='#' class='btn btn-primary'>Obtener</a>
+                    <a href='./actions/obtener_libro.php?id_libro={$libro[ 'id_libro' ]}' class='btn btn-primary'>Obtener libro</a>
                     </div>
                   </div>
               </div>";
         } ?>
-
-
       </div>
     </div>
 
